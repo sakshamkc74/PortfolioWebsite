@@ -36,7 +36,10 @@ $(document).ready(function(){
         backSpeed:100,
         loop: true,
     })
-
+    document.getElementById('checkbox').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+    
 });
 
 function SendMail(){

@@ -177,7 +177,7 @@ section{
     font-family: 'Poppins',sans-serif;
 }
 .about{
-    background-color:var( --color-grey0);
+    background-color:white  ;
 }
 section .title{
     position: relative;
@@ -197,6 +197,9 @@ section .title::before{
     left: 50%;
     transform: translateX(-50%);
     background: #111;
+}
+body.dark-mode section .title::before {
+    background: var(--color-white); /* Color for dark mode */
 }
 section .title::after{    
     position: absolute;
@@ -427,7 +430,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: var(--color-white-5);
 }
 
 .contact .right form .fields{
@@ -711,4 +714,58 @@ footer span a:hover{
     .home .home-content a{
         font-size: 16px;
      }
+}
+
+body.dark-mode {
+    /* Add styles for dark mode here */
+    background-color: #1a1a1a;
+    color: #fff;
+}
+body.dark-mode .about{
+    /* Add styles for dark mode here */
+    background-color: #1a1a1a;
+    color: #fff;
+}
+body.dark-mode .sub-title {
+    color: var(--color-white-5); /* Color for dark mode */
+}
+.checkbox {
+  opacity: 0;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.menu li:last-child {
+    order: 1;
 }
