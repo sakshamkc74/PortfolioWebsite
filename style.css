@@ -699,7 +699,14 @@ footer span a:hover{
     .menu-btn {
         display: block;
     }
+    .services .title::after,.about .title::after,.skills .title::after,.contact .title::after
+    {
+        bottom: -40px;
+    }
 
+    .services .title::before,.about .title::before,.skills .title::before,.contact .title::before{
+        bottom: -10px;
+    }
     .menu-btn.active + .fa-times {
         display: inline-block;
       }
