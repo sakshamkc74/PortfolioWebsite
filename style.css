@@ -210,10 +210,13 @@ body.dark-mode .home {
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-
 .home .home-content a:hover {
-    color: #fff;
+    color: crimson;
     background: none;
+}
+
+body.dark-mode .home .home-content a:hover{
+    color: #FFFFFF;
 }
 
 .home .column-right img {
@@ -719,6 +722,8 @@ footer span a:hover{
        font-size: 23px;
        padding: 10px 30px;
     }
+
+   
 
     .max-width {
         display: flex;
