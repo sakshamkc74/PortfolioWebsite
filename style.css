@@ -210,13 +210,13 @@ section .title::after{
     
 }
 .about .title::after{
-    content: "who i am";
+    content: "WHO I AM";
 }
 .about .about-content .left img{
     height: 430px;
     width: 430px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 .about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content,.portfolios  .portfolio-item{
     display: flex;

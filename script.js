@@ -25,25 +25,17 @@ $(document).ready(function(){
     })
 
     var typed= new Typed(".typing",{
-        strings: ["Developer","Software Engineer","FreeLancer","Foodie"],
+        strings: ["Software Engineer","Student","Traveller"],
         typeSpeed:100,
         backSpeed:100,
         loop: true,
     })
     var typed= new Typed(".typing-2",{
-        strings: ["Developer","Software Engineer","FreeLancer","Foodie"],
+        strings: ["Software Engineer","Student","Traveller"],
         typeSpeed:100,
         backSpeed:100,
         loop: true,
     })
-
-
-
-    var  icon = document.getElementById("icon");
-
-    icon.onclick =function() {
-        document.body.classList.toggle("dark-theme");
-    }
 });
 
 
