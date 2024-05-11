@@ -657,6 +657,19 @@ footer span a:hover{
     opacity: 1;
     transform: scale(1);
   }
+
+  .menu-btn .fa-times {
+    display: none;
+}
+
+.menu-btn.active .fa-times {
+    display: block;
+}
+
+.menu-btn.active .fa-bars {
+    display: none;
+}
+
 /*responsive media query start */
 @media(max-width: 1400px)
 {
@@ -686,19 +699,47 @@ footer span a:hover{
     .menu-btn {
         display: block;
     }
+
+    .menu-btn.active + .fa-times {
+        display: inline-block;
+      }
+      
+    .menu-btn.active .fa-times {
+        display: block;
+      }
+      
+      .menu-btn.active .fa-bars {
+        display: none;
+      }
+
+      .navbar.menu.active {
+        left: 0;
+      }
     /* Adjust menu */
     .navbar .menu {
         position: fixed;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
 
+    body.dark-mode .navbar .menu{
+        background-color: #000;
+    }
+    .serv-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .navbar .menu.active {
         left: 0;
     }
@@ -711,9 +752,8 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-        color: #fff;
+        color: #000;
     }
-
     /* Adjust content layout */
     .max-width {
         display: flex;
@@ -727,11 +767,6 @@ footer span a:hover{
         margin: 0;
     }
 
-    .column-right img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
-    }
 
     .about .about-content .column {
         width: 100%;
@@ -770,7 +805,15 @@ footer span a:hover{
     .home .home-content .text-3 {
         font-size: 32px;
     }
+    .serv-content {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .home .home-content a {
         font-size: 20px;
     }
@@ -797,6 +840,15 @@ footer span a:hover{
 
     .home .home-content a {
         font-size: 16px;
+    }
+    .serv-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 

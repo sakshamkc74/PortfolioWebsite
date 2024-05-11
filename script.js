@@ -18,11 +18,10 @@ $(document).ready(function(){
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
     });
+    // JavaScript code to toggle the menu
 
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    })
+    
+   
 
     var typed= new Typed(".typing",{
         strings: ["Software Engineer","Student","Traveller"],
@@ -44,6 +43,7 @@ $(document).ready(function(){
         var email = this.querySelector('.sub-title').textContent;
         window.location.href = 'mailto:' + email;
     });
+    
     
 });
 function SendMail() {
@@ -97,5 +97,10 @@ function SendMail() {
 
     
 }
-
-
+const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.navbar .menu');
+    
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
