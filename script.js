@@ -25,13 +25,13 @@ $(document).ready(function(){
     })
 
     var typed= new Typed(".typing",{
-        strings: ["Developer","Designer","FreeLancer","Foodie"],
+        strings: ["Developer","Software Engineer","FreeLancer","Foodie"],
         typeSpeed:100,
         backSpeed:100,
         loop: true,
     })
     var typed= new Typed(".typing-2",{
-        strings: ["Developer","Designer","FreeLancer","Foodie"],
+        strings: ["Developer","Software Engineer","FreeLancer","Foodie"],
         typeSpeed:100,
         backSpeed:100,
         loop: true,
