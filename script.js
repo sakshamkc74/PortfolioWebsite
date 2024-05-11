@@ -36,6 +36,24 @@ $(document).ready(function(){
         backSpeed:100,
         loop: true,
     })
+
 });
 
+function SendMail(){
+    var params = {
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    }
+
+    emailjs.send("service_tqf4jxm","template_1qowyhd",params).then(function(res){
+        alert("Message Sent Successfully");
+        document.getElementById("fullName").value = "";
+        document.getElementById("email_id").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+    })
+    
+}
 
