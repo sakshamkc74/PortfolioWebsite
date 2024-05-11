@@ -83,6 +83,9 @@ html{
     padding: 15px 0;
     background: crimson;
 }
+body.dark-mode .navbar.sticky{
+    background: #000;
+}
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -258,24 +261,35 @@ section .title::after{
   color: crimson;
 }
 .services{
+    color: #000;
+    background-color: #fff;
+}
+body.dark-mode .services {
+    /* Add styles for dark mode here */
+    background-color: #1a1a1a;
     color: #fff;
-    background-color: #111;
 }
 .services .title::before{
-    background: #fff;
+    background: #000;
 }
 .services .title::after{
-    background: #111;
+    background: #fff;
     content: "What I Provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+body.dark-mode .services .serv-content .card {
+    /* Add styles for dark mode here */
+    background-color: #1a1a1a;
+    color: #fff;
 }
 .services .serv-content .card i{
     font-size: 50px;
@@ -288,6 +302,9 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .services .serv-content .card:hover{
+    background: crimson;
+}
+body.dark-mode .services .serv-content .card:hover{
     background: crimson;
 }
 .services .serv-content .card:hover i{
