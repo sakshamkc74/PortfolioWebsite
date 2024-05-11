@@ -800,6 +800,7 @@ footer span a:hover{
     .services .serv-content .card {
         width: 100%;
         margin-bottom: 20px;
+        text-align: left;
     }
 
     .skills .skills-content .column,
