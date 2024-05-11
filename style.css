@@ -717,6 +717,9 @@ footer span a:hover{
         width: 320px;
       }
 
+      #services,#about,#portfolio,#skills,#contact{
+        padding: 20px 0;
+      }
       .about .about-content .left img{
         height: 320px;
         width: 320px;
