@@ -48,7 +48,13 @@ function SendMail(){
     }
 
     emailjs.send("service_tqf4jxm","template_1qowyhd",params).then(function(res){
-        alert("Message Sent Successfully");
+        Swal.fire({
+            icon: 'success',
+            title: 'Message Sent Successfully',
+            showConfirmButton: false,
+            timer: 2000
+          });
+          
         document.getElementById("fullName").value = "";
         document.getElementById("email_id").value = "";
         document.getElementById("subject").value = "";
