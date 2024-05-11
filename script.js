@@ -39,6 +39,11 @@ $(document).ready(function(){
     document.getElementById('checkbox').addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
+
+    document.getElementById('emailRow').addEventListener('click', function() {
+        var email = this.querySelector('.sub-title').textContent;
+        window.location.href = 'mailto:' + email;
+    });
     
 });
 function SendMail() {
@@ -89,6 +94,8 @@ function SendMail() {
         document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
     })
+
+    
 }
 
 
