@@ -716,6 +716,11 @@ footer span a:hover{
         height: 320px;
         width: 320px;
       }
+
+      .about .about-content .left img{
+        height: 320px;
+        width: 320px;
+    }
     .menu-btn.active .fa-times {
         display: block;
       }
