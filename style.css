@@ -772,9 +772,7 @@ footer span a:hover{
     .column-right {
         width: 100%;
         margin: 0;
-    }
-
-
+    }   
     .about .about-content .column {
         width: 100%;
     }
@@ -790,7 +788,7 @@ footer span a:hover{
     }
 
     .services .serv-content .card {
-        width: calc(50% - 10px);
+        width: 100%;
         margin-bottom: 20px;
     }
 
