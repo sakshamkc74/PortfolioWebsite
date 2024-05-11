@@ -152,7 +152,7 @@ body.dark-mode .menu-btn {
 }
 
 body.dark-mode .home{
-    background-color: #111;
+    background-color: #000;
     color: #FFFFFF;
 }
 .home {
@@ -162,7 +162,7 @@ body.dark-mode .home{
 }
 
 body.dark-mode .home {
-    background-color: #111;
+    background-color: #000;
     color: #FFFFFF;
 }
 
@@ -325,7 +325,7 @@ section .title::after{
 }
 body.dark-mode .services {
     /* Add styles for dark mode here */
-    background-color: #1a1a1a;
+    background-color: #000;
     color: #fff;
 }
 .services .title::before{
@@ -816,12 +816,12 @@ footer span a:hover{
 
 body.dark-mode {
     /* Add styles for dark mode here */
-    background-color: #1a1a1a;
+    background-color: #000;
     color: #fff;
 }
 body.dark-mode .about{
     /* Add styles for dark mode here */
-    background-color: #1a1a1a;
+    background-color: #000;
     color: #fff;
 }
 body.dark-mode .sub-title {
