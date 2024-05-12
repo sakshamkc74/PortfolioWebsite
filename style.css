@@ -935,12 +935,16 @@ body.dark-mode .sub-title {
   .typing-demo {
     text-transform: uppercase;
     font-weight: bold;
-    width: 22ch;
-    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    width: 24ch;
+    animation: typing 5s steps(24), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
     font-size: 1.75em;
     animation-iteration-count: infinite;
+  }
+
+  .name{
+    color: crimson;
   }
