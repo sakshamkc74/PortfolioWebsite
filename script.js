@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const icon = document.querySelector('.navbar .icon');
     const menu = document.querySelector('.navbar .menu');
     const menuItems = document.querySelectorAll('.navbar .menu li a');
+    const darkmode = document.querySelectorAll('.navbar .menu li .checkbox');
     const body = document.querySelector('body');
 
     // Toggle menu active class when the icon is clicked
@@ -122,4 +123,11 @@ document.addEventListener('DOMContentLoaded', function() {
             body.style.overflow = 'auto';
         });
     });
+
+    darkmode.forEach(item=>{
+        item.addEventListener('click',function(){
+            menu.classList.remove('active');
+            body.style.overflow = 'auto';
+        })
+    })
 });
