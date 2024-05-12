@@ -97,10 +97,22 @@ function SendMail() {
 
     
 }
-const menuBtn = document.querySelector('.menu-btn');
+
+document.addEventListener('DOMContentLoaded', function() {
+    const icon = document.querySelector('.navbar .icon');
     const menu = document.querySelector('.navbar .menu');
-    
-    menuBtn.addEventListener('click', () => {
-      menuBtn.classList.toggle('active');
-      menu.classList.toggle('active');
+    const menuItems = document.querySelectorAll('.navbar .menu li a');
+
+    // Toggle menu active class when the icon is clicked
+    icon.addEventListener('click', function() {
+        menu.classList.toggle('active');
     });
+
+    // Add event listeners to each menu item
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Remove the active class from the menu when a menu item is clicked
+            menu.classList.remove('active');
+        });
+    });
+});

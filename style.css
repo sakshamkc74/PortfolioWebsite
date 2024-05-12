@@ -125,7 +125,7 @@ body.dark-mode .navbar .menu li a:hover {
     color: crimson;
 }
 
-body.dark-mode .menu-btn {
+body.dark-mode .navbar .icon {
     color: #fff;
 }
 
@@ -142,10 +142,10 @@ body.dark-mode .menu-btn {
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: crimson;
 }
-.menu-btn{
-    color: #fff;
+.icon{
+    color: #000;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -657,19 +657,9 @@ footer span a:hover{
     opacity: 1;
     transform: scale(1);
   }
-
-  .menu-btn .fa-times {
+.navbar .icon {
     display: none;
-}
-
-.menu-btn.active .fa-times {
-    display: block;
-}
-
-.menu-btn.active .fa-bars {
-    display: none;
-}
-
+  }
 /*responsive media query start */
 @media(max-width: 1400px)
 {
@@ -696,9 +686,6 @@ footer span a:hover{
 /* For screens up to 947px */
 @media (max-width: 947px) {
     /* Adjust menu button */
-    .menu-btn {
-        display: block;
-    }
     .services .title::after,.about .title::after,.skills .title::after,.contact .title::after
     {
         bottom: -40px;
@@ -707,9 +694,6 @@ footer span a:hover{
     .services .title::before,.about .title::before,.skills .title::before,.contact .title::before{
         bottom: -10px;
     }
-    .menu-btn.active + .fa-times {
-        display: inline-block;
-      }
       .home .column-right img{
         margin: 0px;
         margin-top: 25px;
@@ -724,28 +708,35 @@ footer span a:hover{
         height: 320px;
         width: 320px;
     }
-    .menu-btn.active .fa-times {
-        display: block;
-      }
-      
-      .menu-btn.active .fa-bars {
-        display: none;
-      }
 
-      .navbar.menu.active {
-        left: 0;
-      }
-    /* Adjust menu */
-    .navbar .menu {
-        position: fixed;
-        height: 100%;
+    ul#menus.menu.active{
+        top: 100%;
         width: 100%;
-        left: -100%;
-        top: 0;
+    }
+    /* Adjust menu */   
+
+    .navbar .menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
         background: #fff;
+    }
+
+    .navbar .menu.active {
+        display: block;
+    }
+
+    .navbar .menu li {
+        padding: 10px;
         text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
+        color: #000;
+    }
+
+    .navbar .icon {
+        display: block;
+        text-align: right;
     }
 
     body.dark-mode .navbar .menu{
