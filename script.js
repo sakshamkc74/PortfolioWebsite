@@ -73,8 +73,6 @@ function SendMail() {
         Swal.fire({
             icon: 'success',
             title: 'Message Sent Successfully',
-            showConfirmButton: false,
-            timer: 2000
         });
 
         // Clear form fields after successful submission
