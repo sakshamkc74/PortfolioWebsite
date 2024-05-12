@@ -72,6 +72,8 @@ html{
 }
 /* navbar styling */
 .navbar{
+    display: flex;
+    align-items: center;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -947,4 +949,7 @@ body.dark-mode .sub-title {
 
   .name{
     color: crimson;
+  }
+  .max-width {
+    flex: 1; /* This will make the max-width div take up the remaining space */
   }
