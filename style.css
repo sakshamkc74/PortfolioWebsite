@@ -639,7 +639,7 @@ footer span a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 1rem;
+    margin: 0px 10px 0px 10px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
   }
