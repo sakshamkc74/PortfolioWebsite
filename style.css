@@ -923,6 +923,15 @@ body.dark-mode .sub-title {
     place-items: center;
   }
   
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 24ch; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
   .typing-demo {
     text-transform: uppercase;
     font-weight: bold;
@@ -933,16 +942,5 @@ body.dark-mode .sub-title {
     border-right: 3px solid;
     font-family: monospace;
     font-size: 1.75em;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
+    animation-iteration-count: infinite;
   }
