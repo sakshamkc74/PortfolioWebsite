@@ -18,17 +18,6 @@ $(document).ready(function(){
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
     });
-    // JavaScript code to toggle the menu
-
-    
-   
-
-    var typed= new Typed(".typing",{
-        strings: ["Software Engineer","Student","Traveller"],
-        typeSpeed:100,
-        backSpeed:100,
-        loop: true,
-    })
     var typed= new Typed(".typing-2",{
         strings: ["Software Engineer","Student","Traveller"],
         typeSpeed:100,
