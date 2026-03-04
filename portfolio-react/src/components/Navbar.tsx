@@ -30,18 +30,17 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-dark-900/80 backdrop-blur-lg border-b border-gray-800/50'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+          ? 'navbar-scrolled backdrop-blur-lg border-b border-gray-800/50'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <img src="/images/saksham_logo.png" alt="Saksham Logo" className="h-8 w-auto" />
-            <span className="text-xl font-bold text-white">Saksham</span>
+            <span className="text-xl font-bold nav-logo-text text-white">Saksham</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -50,12 +49,12 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium"
+                className="nav-link text-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium"
               >
                 {item.name}
               </a>
             ))}
-            
+
             {/* Theme Toggle */}
             <button
               onClick={toggleDarkMode}
@@ -101,7 +100,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-dark-800 border-t border-gray-800"
+            className="md:hidden mobile-menu-bg bg-dark-800 border-t border-gray-800"
           >
             <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
