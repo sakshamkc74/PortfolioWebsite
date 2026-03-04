@@ -121,9 +121,8 @@ const Experience = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className={`relative flex flex-col md:flex-row gap-8 ${
-                    index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                  }`}
+                  className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                    }`}
                 >
                   {/* Timeline Dot */}
                   <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent-primary rounded-full border-4 border-dark-900 z-10" />
@@ -200,6 +199,24 @@ const Experience = () => {
                     <p className="text-gray-400">Asian College of Higher Studies</p>
                   </div>
                   <span className="text-accent-primary font-mono text-sm">2017 - 2022</span>
+                </div>
+              </div>
+              <div className="card p-6">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <h4 className="text-lg font-medium text-white">Higher Secondary Education</h4>
+                    <p className="text-gray-400">United Academy</p>
+                  </div>
+                  <span className="text-accent-primary font-mono text-sm">2015 - 2017</span>
+                </div>
+              </div>
+              <div className="card p-6">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <h4 className="text-lg font-medium text-white">School Leaving Certificate (SLC)</h4>
+                    <p className="text-gray-400">Loyola Higher Secondary School</p>
+                  </div>
+                  <span className="text-accent-primary font-mono text-sm">2006 - 2015</span>
                 </div>
               </div>
             </div>

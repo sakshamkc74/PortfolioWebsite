@@ -8,7 +8,7 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-dark-900 text-gray-100 font-sans antialiased;
   }
@@ -36,21 +36,15 @@
 
 @layer components {
   .btn-primary {
-    @apply px-6 py-3 bg-accent-primary text-white font-medium rounded-lg 
-           hover:bg-accent-primary/90 transition-all duration-300 
-           hover:shadow-lg hover:shadow-accent-primary/25
-           focus:outline-none focus:ring-2 focus:ring-accent-primary/50;
+    @apply px-6 py-3 bg-accent-primary text-white font-medium rounded-lg hover:bg-accent-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-accent-primary/25 focus:outline-none focus:ring-2 focus:ring-accent-primary/50;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 border border-gray-700 text-gray-300 font-medium rounded-lg 
-           hover:border-accent-primary hover:text-accent-primary transition-all duration-300
-           focus:outline-none focus:ring-2 focus:ring-accent-primary/50;
+    @apply px-6 py-3 border border-gray-700 text-gray-300 font-medium rounded-lg hover:border-accent-primary hover:text-accent-primary transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent-primary/50;
   }
 
   .card {
-    @apply bg-dark-800/50 backdrop-blur-sm border border-gray-800/50 rounded-xl
-           hover:border-accent-primary/30 transition-all duration-300;
+    @apply bg-dark-800/50 backdrop-blur-sm border border-gray-800/50 rounded-xl hover:border-accent-primary/30 transition-all duration-300;
   }
 
   .section-title {
@@ -62,9 +56,7 @@
   }
 
   .tech-badge {
-    @apply px-3 py-1.5 bg-dark-700 border border-gray-700/50 rounded-md 
-           text-sm font-mono text-gray-300 hover:border-accent-primary/50 
-           hover:text-accent-primary transition-all duration-200;
+    @apply px-3 py-1.5 bg-dark-700 border border-gray-700/50 rounded-md text-sm font-mono text-gray-300 hover:border-accent-primary/50 hover:text-accent-primary transition-all duration-200;
   }
 
   .gradient-text {
@@ -75,7 +67,7 @@
 @layer utilities {
   .bg-grid {
     background-image: linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+      linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
   }
 
@@ -186,9 +178,44 @@ body.light-mode .navbar .menu li a {
   color: #374151 !important;
 }
 
+/* Navbar light mode - scrolled state */
+body.light-mode .navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-bottom-color: #e5e7eb !important;
+}
+
+/* Navbar light mode - nav links */
+body.light-mode .nav-link {
+  color: #374151 !important;
+}
+
+body.light-mode .nav-link:hover {
+  color: #2563eb !important;
+}
+
+/* Navbar light mode - logo text */
+body.light-mode .nav-logo-text {
+  color: #111827 !important;
+}
+
+/* Navbar light mode - mobile menu */
+body.light-mode .mobile-menu-bg {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Navbar light mode - toggle & hamburger */
+body.light-mode nav button {
+  color: #374151 !important;
+}
+
+body.light-mode nav button:hover {
+  color: #111827 !important;
+}
+
 body.light-mode .bg-grid {
   background-image: linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px) !important;
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px) !important;
 }
 
 /* Scrollbar for light mode */
@@ -291,7 +318,7 @@ body.light-mode button:hover {
 
 /* Dividers */
 body.light-mode hr,
-body.light-mode .divide-dark-700 > * {
+body.light-mode .divide-dark-700>* {
   border-color: #e5e7eb !important;
 }
 
