@@ -38,9 +38,9 @@ const Navbar = ({ darkMode, toggleDarkMode }: NavbarProps) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <img src="/images/saksham_logo.png" alt="Saksham Logo" className="h-8 w-auto" />
-            <span className="text-xl font-bold nav-logo-text text-white">Saksham</span>
+          <a href="#" className="text-xl font-bold">
+            <span className="nav-logo-text text-white">Saksham</span>
+            <span className="text-accent-primary">.</span>
           </a>
 
           {/* Desktop Navigation */}
